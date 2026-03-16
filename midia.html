@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-UPF</title>
+</head>
+<body>
+    <header>
+        <h1>Prática com áudio e vídeo</h1>
+        <p>Exemplos das tags &lt;audio&gt; e &lt;video&gt;.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="sobre.html">Sobre</a> |
+        <a href="aulas.html">Aulas</a> |
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <h2>Exemplo de áudio</h2>
+
+        <!--
+            controls = mostra botões de play/pause/volume
+            source define o arquivo e o tipo da mídia
+        -->
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio em HTML5.
+        </audio>
+
+        <h2>Exemplo de vídeo</h2>
+
+        <!--
+            width = largura do vídeo
+            controls = mostra os controles do player
+        -->
+        <video width="420" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo em HTML5.
+        </video>
+
+        <p>
+            Em projetos reais, é comum salvar os arquivos em pastas locais,
+            como <code>midia/audio.mp3</code> e <code>midia/video.mp4</code>.
+        </p>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>UPF - 2026</p>
+    </footer>
+</body>
+</html>
+

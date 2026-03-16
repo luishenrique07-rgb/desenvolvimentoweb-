@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-UPF</title>
+</head>
+<body>
+    <header>
+        <h1>Prática com links</h1>
+        <p>Aprendendo a usar a tag &lt;a&gt;.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="sobre.html">Sobre</a> |
+        <a href="aulas.html">Aulas</a> |
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <h2>1) Link interno</h2>
+
+        <!-- Link para outra página do mesmo projeto -->
+        <p><a href="aulas.html">Ir para a página de aulas</a></p>
+
+        <h2>2) Link externo</h2>
+
+        <!--
+            target="_blank" abre em nova aba
+            rel="noopener noreferrer" é uma boa prática de segurança
+        -->
+        <p>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+                Ver documentação de HTML (MDN)
+            </a>
+        </p>
+
+        <h2>3) Link para parte da mesma página</h2>
+
+        <!-- Este link leva até a seção com id="rodape" -->
+        <p><a href="#rodape">Pular para o rodapé</a></p>
+
+        <h2>4) Link para e-mail</h2>
+
+        <!-- Abre o programa de e-mail com o endereço preenchido -->
+        <p><a href="mailto:exemplo@email.com">Enviar e-mail</a></p>
+    </main>
+
+    <hr>
+
+    <!-- id usado como destino do link interno da página -->
+    <footer id="rodape">
+        <p>UPF - 2026</p>
+    </footer>
+</body>
+</html>
+
